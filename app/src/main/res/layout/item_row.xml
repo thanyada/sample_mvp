@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/tvAlphabelt"
+        android:background="@drawable/bg_alphabelt_name"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintDimensionRatio="H,1:1"/>
+
+
+    <LinearLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAlphabelt"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="name lastname" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="age : 0 " />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="gender : male" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tel : 081-1111111" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thai"
+        android:id="@+id/tgThai"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:textColor="@android:color/white"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
