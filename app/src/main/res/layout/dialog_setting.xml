@@ -67,7 +67,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:id="@+id/swDesc"
-            android:text="desc"/>
+            android:checked="false"
+            android:textOff="ASC"
+            android:textOn="DESC"/>
 
     </LinearLayout>
 

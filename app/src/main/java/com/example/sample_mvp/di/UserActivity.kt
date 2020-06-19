@@ -108,6 +108,7 @@ class UserActivity : AppCompatActivity(),UserContract.View {
 
         swDesc.setOnCheckedChangeListener { _, isChecked ->
             presenter.sortBy(isChecked)
+            swDesc.text = presenter.textSort()
         }
 
 
