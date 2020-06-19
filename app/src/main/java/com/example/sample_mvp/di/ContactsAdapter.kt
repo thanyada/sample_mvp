@@ -53,10 +53,10 @@ class ContactsAdapter(val callback : ContactsAdapterInteface) : RecyclerView.Ada
             val colorbg = if(user.isThaiNationality!!) Color.BLUE else Color.RED
             tgThai.setBackgroundColor(colorbg)
 
-            tvPhone.visibility = if(filters.contains(KeyUser.PHONENUNBER)) View.VISIBLE else View.INVISIBLE
-            tvAge.visibility = if(filters.contains(KeyUser.AGE)) View.VISIBLE else View.INVISIBLE
-            tvGender.visibility = if(filters.contains(KeyUser.GENDER)) View.VISIBLE else View.INVISIBLE
-            tgThai.visibility = if(filters.contains(KeyUser.ISTHAI)) View.VISIBLE else View.INVISIBLE
+            tvPhone.visibility = if(filters.contains(KeyUser.PHONENUNBER)) View.VISIBLE else View.GONE
+            tvAge.visibility = if(filters.contains(KeyUser.AGE)) View.VISIBLE else View.GONE
+            tvGender.visibility = if(filters.contains(KeyUser.GENDER)) View.VISIBLE else View.GONE
+            tgThai.visibility = if(filters.contains(KeyUser.ISTHAI)) View.VISIBLE else View.GONE
 
         }
     }
